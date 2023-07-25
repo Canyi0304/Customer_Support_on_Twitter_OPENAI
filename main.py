@@ -8,7 +8,7 @@ data = pd.read_csv("twcs.csv")
 tweets = data[data['inbound'] & data['response_tweet_id'].isnull()]  # 고객의 문의만 추출
 
 # OpenAI API 설정
-api_key = "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"  # API 키를 입력하세요
+api_key = ""  # API 키를 입력하세요
 openai.api_key = api_key
 
 
